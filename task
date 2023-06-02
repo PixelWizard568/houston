@@ -19,3 +19,12 @@ setup(
     ],
     package_data={"cpm_live": ["vocabs/*.txt"]},
 )
+module.exports = {
+  plugins: [
+    require("postcss-import"),
+    require("tailwindcss/nesting"),
+    require("tailwindcss")("./src/components/tailwind.config.js"),
+    require("postcss-hover-media-feature"),
+  ],
+}
+
