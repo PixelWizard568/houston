@@ -1,0 +1,14 @@
+# Optionally initialize the database
+ask_to_init_db
+
+# Build the web client
+cd ui
+yarn
+yarn build
+
+# Build and run the backend
+cd ../server
+RUST_LOG=debug cargo run
+
+# For live coding, where both the front and back end, automagically reload on any save
+ask_to_auto_reload
