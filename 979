@@ -10,5 +10,3 @@ yarn build
 cd ../server
 RUST_LOG=debug cargo run
 
-# For live coding, where both the front and back end, automagically reload on any save
-ask_to_auto_reload
