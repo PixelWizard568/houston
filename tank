@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
+    "android": "expo start ,
     "ios": "expo start --ios"
     "react-devtool": "react-devtools"
   },
